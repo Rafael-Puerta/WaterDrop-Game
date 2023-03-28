@@ -132,7 +132,7 @@ public class GameScreen implements Screen {
                 iter.remove();
                 gameOver.play();
                 rainMusic.stop();
-
+                game.setScreen(new Over(game,dropsGathered));
             }
             if (raindrop.overlaps(bucket)) {
                 dropsGathered++;
