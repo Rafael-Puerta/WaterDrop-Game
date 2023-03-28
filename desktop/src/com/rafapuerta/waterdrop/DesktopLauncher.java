@@ -2,7 +2,6 @@ package com.rafapuerta.waterdrop;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import com.rafapuerta.waterdrop.waterdop;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
@@ -11,6 +10,6 @@ public class DesktopLauncher {
 		config.setWindowedMode(800, 480);
 		config.useVsync(true);
 		config.setForegroundFPS(60);
-		new Lwjgl3Application(new waterdop(), config);
+		new Lwjgl3Application(new Drop(), config);
 	}
 }
